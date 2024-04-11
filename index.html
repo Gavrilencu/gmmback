@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestiune Produse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Gestiune Produse</h1>
+
+    <!-- Selector pentru metoda HTTP -->
+    <select id="httpMethod">
+        <option value="GET">GET</option>
+        <option value="POST">POST</option>
+        <option value="PUT">PUT</option>
+        <option value="DELETE">DELETE</option>
+    </select>
+
+    <!-- Formular pentru datele produsului -->
+    <form id="productForm">
+        <input type="hidden" id="productId">
+        <input type="text" id="category" placeholder="Categorie">
+        <input type="text" id="name" placeholder="Nume">
+        <input type="text" id="code" placeholder="Cod">
+        <textarea id="description" placeholder="Descriere"></textarea>
+        <button type="submit">Execută Acțiune</button>
+    </form>
+
+    <!-- Listarea produselor -->
+    <div id="productsList"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
