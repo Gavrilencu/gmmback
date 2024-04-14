@@ -44,7 +44,7 @@ app.get('/api/products/chromagar', (req, res) => {
         }
     });
 });
-/// adaugam get pentru categoriasdasdaile new
+/// adaugam get pentru cateasdasdasgoriasdasdaile new
 app.get('/api/products/news', (req, res) => {
     db.all("SELECT * FROM Products WHERE category = 'News'", [], (err, rows) => {
         if (err) {
